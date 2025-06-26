@@ -67,15 +67,15 @@ If you want to use HTTP transport (for custom integrations), you can run the cod
 
 
 
-![tools](https://github.com/user-attachments/assets/8a7182b6-b12b-4ef2-b08b-7475418bfad2)
+![tools](https://github.com/user-attachments/assets/67727bbc-76dd-4d6a-80c0-dd2eb093b1e7)
 
 
 
-![1](https://github.com/user-attachments/assets/042a533e-3b43-42fb-8f16-504504fc34e6)
+![1](https://github.com/user-attachments/assets/075b476f-8794-4889-9419-1d2d0d4205a9)
 
 
 
-![2](https://github.com/user-attachments/assets/15ab6c09-ef28-45f2-9217-ccca78f42ef6)
+![2](https://github.com/user-attachments/assets/69d04073-b5e5-46b7-a780-f3d800b00192)
 
 
 
