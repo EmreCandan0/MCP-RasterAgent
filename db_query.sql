@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS postgis;
+
 CREATE TABLE tiff_metadata (
     id SERIAL PRIMARY KEY,
     filename TEXT NOT NULL,
