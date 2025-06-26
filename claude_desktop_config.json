@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "tiffcropper": {
+      "command": "C:\\Users\\yourusername\\miniconda3\\envs\\tiffcropper\\python.exe",
+      "args": [
+        "C:\\Users\\yourusername\\Desktop\\tiffcropper\\main.py",
+        "python",
+        "main.py"
+      ]
+    }
+  }
+}
