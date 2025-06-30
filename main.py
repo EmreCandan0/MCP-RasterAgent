@@ -98,6 +98,38 @@ def crop_image(filepath: str, minx: float, miny: float, maxx: float, maxy: float
 
     return {"image_url": output_path}
 
+@mcp.tool()
+def get_ndvi(filepath: str, x: float, y: float) -> dict:
+
+    reprojected_path = f'temp/reprojected_{os.path.basename(filepath)}'
+
+
+    if not os.path.exists(reprojected_path):
+        gdal.Warp(reprojected_path, filepath, dstSRS='EPSG:4326', format='GTiff')
+
+    dataset = gdal.Open(reprojected_path)
+    red_band = dataset.GetRasterBand(1).ReadAsArray().astype(float)
+    nir_band = dataset.GetRasterBand(2).ReadAsArray().astype(float)
+
+    ndvi = (nir_band - red_band) / (nir_band + red_band)
+    ndvi = np.nan_to_num(ndvi, nan=0.0, posinf=0.0, neginf=0.0)
+    ndvi_mean = ndvi.mean()
+
+    gt = dataset.GetGeoTransform()
+    px = int((x - gt[0]) / gt[1])
+    py = int((y - gt[3]) / gt[5])
+
+    if 0 <= px < ndvi.shape[1] and 0 <= py < ndvi.shape[0]:
+        ndvi_point = ndvi[py, px]
+    else:
+        ndvi_point = None
+
+    return {
+        "ndvi_mean": ndvi_mean,
+        "ndvi_point": ndvi_point
+    }
+
+
 if __name__ == "__main__":
     os.makedirs("temp", exist_ok=True)
     os.makedirs("static/outputs", exist_ok=True)
