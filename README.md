@@ -1,6 +1,6 @@
 # MCP-RasterAgent
 
-A Python [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) agent for analyzing and cropping local GeoTIFF files by file path and saving the cropped file as PNG.  
+A Python [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) agent for analyzing and cropping local GeoTIFF files by file path and saving the cropped file as PNG then calculating NDVI Mean and for the given point as X,Y coordinates.  
 Integrates seamlessly with Claude Desktop and other MCP-compatible systems.
 
 ---
@@ -77,6 +77,8 @@ If you want to use HTTP transport (for custom integrations), you can run the cod
 
 ![2](https://github.com/user-attachments/assets/69d04073-b5e5-46b7-a780-f3d800b00192)
 
+
+![image](https://github.com/user-attachments/assets/b7cb5bd7-3fe9-46bb-ba1d-a107d86a7477)
 
 
 
