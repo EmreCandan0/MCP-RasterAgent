@@ -14,6 +14,7 @@ Integrates seamlessly with Claude Desktop and other MCP-compatible systems.
   _(Note: Because Claude Desktop doesn't support TIFF uploads, this agent uses file paths instead of uploads.)_
 - **Extensible:** Easy to add more geospatial tools.
 
+Note:If you want to run it as local client using pattern match you will need an mcp client to be parsed by pattern_match.py which will be added soon.
 ---
 
 ## Requirements
@@ -86,6 +87,6 @@ If you want to use HTTP transport (for custom integrations), you can run the cod
 
 
 
-Note:For running it as client on local,you will need an mcp client to be parsed by pattern_match.py which will be added soon.
+
 
 
