@@ -82,3 +82,10 @@ If you want to use HTTP transport (for custom integrations), you can run the cod
 
 
 
+
+
+
+
+Note:For running it as client on local,you will need an mcp client to be parsed by pattern_match.py which will be added soon.
+
+
